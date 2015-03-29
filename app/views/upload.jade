@@ -1,0 +1,7 @@
+extends base.jade
+
+block content
+	h1 Upload page
+	form(method='POST' enctype='multipart/form-data')
+		input(type='file' name='csvFile' id='csvFile')
+		input(type='submit' name='submit' id='submit' value='Submit')
