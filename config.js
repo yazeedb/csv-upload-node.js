@@ -4,7 +4,6 @@ module.exports = {
 
 	//multer configurations
 	multerConfig: {
-		//dest: '../uploads',
 		onFileUploadStart: function (file) {
 			console.log('Uploading...');
 		}

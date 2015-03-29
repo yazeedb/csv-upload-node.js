@@ -10,6 +10,7 @@ mongoose.connect(config.database);
 
 app.set('view engine', 'jade');
 app.set('views', path.join(__dirname + '/app/views'));
+app.use(express.static(__dirname + '/app/public'));
 app.use(multer(config.multerConfig));
 
 //routes for the app
