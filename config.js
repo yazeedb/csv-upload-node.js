@@ -4,13 +4,9 @@ module.exports = {
 
 	//multer configurations
 	multerConfig: {
-		dest: '../uploads',
+		//dest: '../uploads',
 		onFileUploadStart: function (file) {
 			console.log('Uploading...');
-		},
-		onFileUploadComplete: function (file) {
-			console.log('Done uploading CSV');
-			console.log(file);
 		}
 	}
 };
