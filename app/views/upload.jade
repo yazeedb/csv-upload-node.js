@@ -1,7 +1,9 @@
 extends base.jade
 
 block content
-	h1 Upload page
+	h1 Upload a CSV
 	form(method='POST' enctype='multipart/form-data')
-		input(type='file' name='csvFile' id='csvFile')
-		input(type='submit' name='submit' id='submit' value='Submit')
+		div.form-group
+			input(type='file' name='csvFile' id='csvFile')
+		div.form-group
+			input.btn.btn-success(type='submit' name='submit' id='submit' value='Submit')
