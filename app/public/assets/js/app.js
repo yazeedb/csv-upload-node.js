@@ -1,4 +1,6 @@
-$('#schools').accordion({
-	collapsible: true,
-	heightStyle: "fill"
-});
+(function() {
+	$('#schools').accordion({
+		active: false,
+		collapsible: true
+	});
+})();
